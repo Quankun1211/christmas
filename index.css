@@ -7,6 +7,7 @@ body{
     margin: 0;
 }
 header{
+    width: 100%;
     min-height: 100vh;
     background-image: url(./src/img/istockphoto-1726167056-170667a.webp);
     background-repeat: no-repeat;
@@ -203,5 +204,25 @@ header{
     }
     to{
         transform: scale(1.0);
+    }
+}
+
+
+
+
+@media screen and (min-width: 769px) {
+    /*PC*/
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    /* STYLES HERE */
+}
+
+@media only screen and (max-device-width: 480px) {
+    header{
+        width: 100%;
+    }
+    .gift-item{
+        width:60%;
     }
 }
