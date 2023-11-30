@@ -46,6 +46,6 @@ close.forEach((close, index) => {
 //     });
 //   }
 
-window.onclick = () => {
+window.onmouseover = () => {
     audio.play()
 }
