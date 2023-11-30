@@ -23,7 +23,6 @@ boxs.forEach((box, index) => {
     box.onclick = () => {
         giftItem.classList.add('active')
         giftBox.classList.add('none')
-        console.log(index)
     }
 })
 close.forEach((close, index) => {
@@ -34,7 +33,19 @@ close.forEach((close, index) => {
     }
 })
 
-function playAudio() {
+
+// var promise = audio.play()
+// if (promise !== undefined) {
+//     promise.then(_ => {
+//       audio.play()
+//       playOnLoad = true
+//     }).catch(error => {
+//         playedOnLoad = true;
+//       // Autoplay was prevented.
+//       // Show a "Play" button so that user can start playback.
+//     });
+//   }
+
+window.onclick = () => {
     audio.play()
 }
-window.addEventListener('DOMContentLoaded',playAudio())
