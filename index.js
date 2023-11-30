@@ -9,6 +9,8 @@ const boxs = document.querySelectorAll('.box')
 const gift = document.querySelector('.gift-item')
 const giftItems = document.querySelectorAll('.gift-item')
 const close = document.querySelectorAll('.close')
+const audio = document.getElementById('audio')
+
 
 setTimeout(() =>{
     yesBtn.onclick = () => {
@@ -31,3 +33,8 @@ close.forEach((close, index) => {
         giftBox.classList.remove('none')
     }
 })
+
+function playAudio() {
+    audio.play()
+}
+window.addEventListener('DOMContentLoaded',playAudio())
