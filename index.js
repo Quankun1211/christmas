@@ -10,14 +10,36 @@ const gift = document.querySelector('.gift-item')
 const giftItems = document.querySelectorAll('.gift-item')
 const close = document.querySelectorAll('.close')
 const audio = document.getElementById('audio')
-
+const noneSelect = document.querySelector('.none-select')
+const backBtn = document.querySelector('.back-btn')
+const backGift = document.querySelector('.back-gift-btn')
+const addGift = document.querySelector('.add-gift')
+const input = document.querySelector('.input-gift')
+const output = document.querySelector('.thanks')
+var inputValue
 
 setTimeout(() =>{
     yesBtn.onclick = () => {
         select.classList.add('none')
         giftBox.classList.remove('none')
     }
-},4000)
+},400)
+setTimeout(() =>{
+    noBtn.onclick = () => {
+        select.classList.add('none')
+        noneSelect.classList.remove('none')
+    }
+},400)
+backBtn.onclick = () => {
+    noneSelect.classList.add('none')
+    select.classList.remove('none')
+
+}
+backGift.onclick = () => {
+    giftBox.classList.add('none')
+    select.classList.remove('none')
+
+}
 boxs.forEach((box, index) => {
     const giftItem = giftItems[index]
     box.onclick = () => {
@@ -32,19 +54,14 @@ close.forEach((close, index) => {
         giftBox.classList.remove('none')
     }
 })
+input.onchange = (e) => {
+    inputValue = e.target.value
+}
+addGift.onclick = () => {
+    var html = `<h1 class="thanks-text gift-text">Cảm ơn ${inputValue} !! Chúc bạn một mùa giáng sinh vui vẻ nhaaa <3 <3</h1>`
+    output.innerHTML = html
+}
 
-
-// var promise = audio.play()
-// if (promise !== undefined) {
-//     promise.then(_ => {
-//       audio.play()
-//       playOnLoad = true
-//     }).catch(error => {
-//         playedOnLoad = true;
-//       // Autoplay was prevented.
-//       // Show a "Play" button so that user can start playback.
-//     });
-//   }
 
 window.onclick = () => {
     audio.play()
