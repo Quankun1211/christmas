@@ -58,7 +58,7 @@ input.onchange = (e) => {
     inputValue = e.target.value
 }
 addGift.onclick = () => {
-    var html = `<h1 class="thanks-text gift-text">Cảm ơn ${inputValue} !! Chúc bạn một mùa giáng sinh vui vẻ nhaaa <3 <3</h1>`
+    var html = `<h1 class="thanks-text gift-text">Cảm ơn ${inputValue} !! Chúc ${inputValue} một mùa giáng sinh vui vẻ nhaaa <3 <3</h1>`
     output.innerHTML = html
 }
 
