@@ -401,7 +401,7 @@ header{
         margin: 240px 0;
     }
     .gift-item{
-        width:85%;
+        width:90%;
     }
     .none-select {
         position: fixed;
@@ -460,6 +460,6 @@ header{
     .input-active{
         display: flex;
         position:fixed;
-        top:50%;
+        top:30%;
     }
 }
