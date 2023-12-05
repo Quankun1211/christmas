@@ -63,6 +63,6 @@ addGift.onclick = () => {
 }
 
 
-// window.onclick = () => {
-//     audio.play()
-// }
+window.onclick = () => {
+    audio.play()
+}
