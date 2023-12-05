@@ -401,7 +401,7 @@ header{
         margin: 240px 0;
     }
     .gift-item{
-        width:70%;
+        width:85%;
     }
     .none-select {
         position: fixed;
@@ -429,6 +429,12 @@ header{
     .its-you-2 {
         /* margin-top: 20px; */
         width: 90%;
+    }
+    .gift-item.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60%;
     }
     .back-gift-btn {
         margin: 40px 0 0 0;
