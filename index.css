@@ -29,6 +29,7 @@ header{
     font-family:'Pushster', cursive;
     text-shadow: 0px 3px 8px rgba(255, 255, 255, 0.7);
 }
+.snow{}
 .snow1
 ,.snow2{
     position: absolute;
