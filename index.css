@@ -460,7 +460,7 @@ header{
     }
     .input-active{
         display: flex;
-        position:fixed;
+        /* position:fixed; */
         top:30%;
     }
 }
