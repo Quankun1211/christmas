@@ -81,6 +81,8 @@ addGift.onclick = () => {
     
 
 }
+
+//this line is music commit
 window.onclick = () => {
     audio.play()
 }
