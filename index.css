@@ -181,7 +181,7 @@ header{
 .none-img{
     position: relative;
     right:-20px;
-    width :120%;
+    width :110%;
 }
 .back-gift-btn{
     margin:100px 0 0 0;
@@ -247,7 +247,7 @@ header{
 }
 .gift-item{
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(247, 112, 112, 0.9);
     box-shadow: 0 2px 8px rgba(255, 0, 0, 0.5);
     width: 100%;
     max-width: 800px;
@@ -287,8 +287,9 @@ header{
     justify-content: center;
     align-items: center;
     height: 100%;
-    color:#ff0000;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color:rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 0px 3px 8px rgba(255, 255, 255, 0.7);
 }
 @keyframes fadeIn {
     from{
@@ -303,7 +304,7 @@ header{
 }
 .its-you-2{
     /* margin-top:20px; */
-    width:50%;
+    width:60%;
 
 }
 .gift-inside{
@@ -317,8 +318,9 @@ header{
 }
 .gift-1-second-text,
 .gift-1-text{
-    color:#ff0000;
-    text-shadow:0 5px 8px rgba(0, 0, 0, 0.7);
+    color:rgb(255, 255, 255);
+    font-family:'Pushster', cursive;
+    text-shadow: 0px 3px 8px rgba(255, 255, 255, 0.7);
 }
 .input-gift{
     width:300px;

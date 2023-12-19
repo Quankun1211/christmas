@@ -17,6 +17,7 @@ const addGift = document.querySelector('.add-gift')
 const input = document.querySelector('.input-gift')
 const output = document.querySelector('.thanks')
 var inputValue
+const name = ['Ha Vy', 'Ha vy', 'ha vy', 'Vy', 'vy', 'Hà Vy', 'hà vy', 'Hà vy', 'vi','Ha vi', 'Vi', 'Ha Vi' ,'Hà Vi']
 
 setTimeout(() =>{
     yesBtn.onclick = () => {
@@ -57,12 +58,29 @@ close.forEach((close, index) => {
 input.onchange = (e) => {
     inputValue = e.target.value
 }
+var html
 addGift.onclick = () => {
-    var html = `<h1 class="thanks-text gift-text">Cảm ơn ${inputValue} !! Chúc ${inputValue} một mùa giáng sinh vui vẻ nhaaa <3 <3</h1>`
-    output.innerHTML = html
-}
+    for(var i = 0; i < name.length ; i++) {
+        if(inputValue === undefined){
+            console.log(123)
+        }
+        if(name[i] === inputValue){
+            html = `<h1 class="thanks-text gift-text">Cám ơngg ${name[i]} !! Chúc ${name[i]} một mùa giáng sinh vui vẻ nhaaa !! Chu Chu =))</h1>`
+            output.innerHTML = html
+            return
+        }else if(inputValue === undefined){
+            html = `<h1 class="thanks-text gift-text">Nhập tên vào đi !!</h1>`
+            input.focus()
+            output.innerHTML = html
+        }
+        else{
+            html = `<h1 class="thanks-text gift-text">Cảm ơn ${inputValue} !! Chúc ${inputValue} một mùa giáng sinh vui vẻ nhaaa !!</h1>`
+            output.innerHTML = html
+        }
+    }
+    
 
-
-window.onclick = () => {
-    audio.play()
 }
+// window.onclick = () => {
+//     audio.play()
+// }
